@@ -35,8 +35,25 @@ public class CalculatorTest {
         assertThat(calculator.subtract(3, 1), equalTo(2));
     }
 
-    // soma e multiplica
+    @Test
+    public void oneMinusTwoReturnsMinusOne(){
+        assertThat(calculator.subtract(1, 2), equalTo(-1));
+    }
 
-    // soma e subtrai
+    // multiplica
+
+    // divide
+
+    @Test
+    public void tenPlusTenMinusFiveReturnsFifteen() {
+        assertThat(calculator.sumTwoValuesAndSubtractATax(10, 10, 5), equalTo(15));
+
+    }
+
+    @Test
+    public void tenPlusFifteenMinusTwoReturnsTwentyThree() {
+        assertThat(calculator.sumTwoValuesAndSubtractATax(10, 15, 2), equalTo(23));
+    }
+
 
 }
